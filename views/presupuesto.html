@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Presupuesto</title>
+</head>
+
+<body>
+    <header class="header1234">
+
+        <nav class="nav1234">
+            <ul>
+                <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="./productos.html" class="nav-link">Productos</a></li>
+                <li><a href="./presupuesto.html" class="nav-link"
+                        style="background-color:#8cce2f; border-radius: 8px;">Presupuesto</a></li>
+            </ul>
+        </nav>
+        <div class="logo1234">
+            <img src="../assets/images/airplane-svgrepo-com.svg" alt="Logo Agencia de Viajes">
+        </div>
+    </header>
+    <main><br><br><br>
+        <h1>Formulario de Presupuesto</h1>
+        <form id="presupuestoForm">
+            <div class="form-group">
+                <h2>Datos de contacto</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" maxlength="15" placeholder="Escribe tu nombre" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" maxlength="40" placeholder="Escribe tus apellidos" required>
+
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="text" id="telefono" maxlength="9" placeholder="Escribe tu teléfono" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="Escribe tu correo electrónico" required>
+            </div>
+
+            <div class="form-group">
+                <h2>Presupuesto</h2>
+                <label for="producto">Elige un producto:</label>
+                <select id="producto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="100">Producto A - 100€</option>
+                    <option value="200">Producto B - 200€</option>
+                    <option value="300">Producto C - 300€</option>
+                </select>
+
+                <label for="plazo">Plazo en meses:</label>
+                <input type="number" id="plazo" min="1" max="24" placeholder="Ejemplo: 12" required>
+
+                <fieldset class="form-group extras">
+                    <legend>Elige los extras para el producto:</legend>
+                    <label><input type="checkbox" value="50"> Color personalizado - 50€</label>
+                    <label><input type="checkbox" value="30"> Tipografía personalizada - 30€</label>
+                    <label><input type="checkbox" value="20"> Tamaño personalizado - 20€</label>
+                </fieldset>
+
+                <label for="presupuesto">Presupuesto estimado:</label>
+                <input type="text" id="presupuesto" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="condiciones" required>
+                    He leído la política de privacidad
+                </label>
+            </div>
+
+            <div class="submit-buttons">
+                <button type="reset">Resetear formulario</button>
+                <button type="submit">Enviar formulario</button>
+            </div>
+        </form>
+
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- Contenedor de los logos -->
+        <div class="footer-logos">
+            <!-- Cada logo es un enlace hacia otra página -->
+            <a href="https://www.youtube.com/" target="_blank" title="Enlace a link de youtube">
+                <img src="../assets/images/youtubeicon.svg" alt="Logo de youtube">
+            </a>
+            <a href="https://www.google.com/intl/es/account/about/" target="_blank" title="Enlace a link de gmail">
+                <img src="../assets/images/official-gmail-icon-2020.svg" alt="Logo de gmail">
+            </a>
+            <a href="https://www.instagram.com/accounts/emailsignup/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es"
+                target="_blank" title="Enlace a link de instagram">
+                <img src="../assets/images/instagram-logo-icone4.png" alt="Logo de instagram">
+            </a>
+            <a href="https://www.facebook.com/?locale=es_ES" target="_blank" title="Enlace a facebook">
+                <img src="../assets/images/124010.png" alt="Logo de facebook ">
+            </a>
+        </div>
+
+        <!-- Texto de derechos reservados -->
+        <p class="footer-text">Derechos reservados Cristhian Sena</p>
+    </footer>
+    <script src="../scripts/presupuestos.js"></script>
+</body>
+
+</html>

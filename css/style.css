@@ -1,0 +1,372 @@
+/* Variables globales */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #53b00b;
+    --text-color: #333;
+    --background-color: #8cce2f;
+    --font-size: 1.6rem;
+    --font-size-large: 2.4rem;
+    --font-size-title: 3rem;
+
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+.header1234 {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.header1234 .logo1234 img {
+    max-height: 30px;
+}
+
+.header1234 .nav1234 ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header1234 .nav1234 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: var(--font-size);
+    padding: 10px;
+
+}
+
+
+/* Efecto hover */
+.header1234 .nav1234 ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    /* Fondo gris oscuro al pasar el cursor */
+
+}
+
+
+/* Hero Section */
+.hero1234 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background: url('../assets/images/BALI.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+
+
+
+.hero1234 .hero-content1234 h1 {
+    font-size: var(--font-size-title);
+    color: #333;
+}
+
+.hero1234 .hero-content1234 h1:hover {
+    color: black;
+
+}
+
+.hero1234 .hero-content1234 p {
+    font-size: var(--font-size-large);
+    color: #333;
+}
+
+.hero1234 .hero-content1234 p:hover {
+    color: black;
+}
+
+.btn-hero1234 {
+    padding: 10px 20px;
+    background-color: #ffff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: var(--font-size);
+}
+
+.btn-hero1234:hover {
+    background-color: rgba(99, 167, 223, 0.4);
+}
+
+/* Servicios Section */
+.servicios1234 {
+    padding: 40px;
+    text-align: center;
+}
+
+.servicios1234 h2 {
+    margin-bottom: 20px;
+    font-size: var(--font-size-title);
+}
+
+.servicios-list1234 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servicio-item1234 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-item1234:hover {
+    background-color: #8cce2f;
+    border: #333 solid 2px;
+}
+
+/* Destinos Section */
+.destinos1234 {
+
+    padding: 40px;
+    text-align: center;
+    background-color: #8cce2f;
+    border-bottom: 1px solid #333;
+
+}
+
+.destinos1234 .destinos-gallery1234 {
+    display: flex;
+    gap: 10px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    padding: 7px 7px 7px 7px;
+
+}
+
+.destino-item1234 {
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    background-image: url(../assets/images/Dubai.jpg);
+}
+
+.destino-item1234:hover {
+    width: 300px;
+    height: 200px
+}
+
+/* Noticias Section */
+.noticias1234 {
+    padding: 40px;
+    text-align: center;
+
+}
+
+.noticias-list1234 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+}
+
+.noticias-list1234:hover {
+    cursor: pointer;
+    background-color: #3498db;
+    border: var(--text-color);
+
+}
+
+/*footer style*/
+/* Estilo general del footer */
+footer {
+    height: 120px;
+    /* Altura fija del footer */
+    background-color: var(--primary-color);
+    /* Color de fondo oscuro */
+    color: #fff;
+    /* Texto en color blanco */
+    display: flex;
+    /* Usamos flexbox para centrar el contenido */
+    flex-direction: column;
+    /* Alineamos contenido en columnas */
+    justify-content: center;
+    /* Centramos el contenido verticalmente */
+    align-items: center;
+    /* Centramos el contenido horizontalmente */
+    padding: 10px;
+    /* Espaciado interno */
+}
+
+/* Estilo del contenedor de logos */
+.footer-logos {
+    display: flex;
+    /* Flexbox para colocar los logos en una fila */
+    gap: 15px;
+    /* Espacio entre los logos */
+    margin-bottom: 10px;
+    /* Separación entre los logos y el texto */
+}
+
+/* Estilo para cada logo */
+.footer-logos img {
+    width: 40px;
+    /* Ancho fijo de cada logo */
+    height: 40px;
+    /* Altura fija de cada logo */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+    transition: transform 0.3s;
+    /* Añadimos un efecto suave al interactuar */
+}
+
+/* Efecto hover (al pasar el cursor por los logos) */
+.footer-logos img:hover {
+    transform: scale(1.1);
+    /* Agranda el logo ligeramente */
+}
+
+/* Estilo del texto de derechos reservados */
+.footer-text {
+    font-size: 14px;
+    /* Tamaño del texto */
+    text-align: center;
+    /* Alineación centrada */
+    margin: 0;
+    /* Quitamos márgenes por defecto */
+}
+
+
+
+/**********************************************************/
+/*style main destinos */
+/* Miniaturas dinámicas */
+/*galeria de fotos*/
+
+
+.container {
+    padding: 40px;
+}
+
+.container .image-container a img {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    border: 10px solid #5a5757;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s linear;
+    cursor: pointer;
+}
+
+.container .image-container a img:hover {
+    transform: scale(1.1);
+    border-color: rgb(183, 183, 183);
+    /* Cambia el color del borde al pasar el cursor */
+}
+
+.container2 .image-container2 a img {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    border: 10px solid #5a5757;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s linear;
+    cursor: pointer;
+}
+
+.container2 {
+    padding: 40px;
+}
+
+.container2 .image-container2 a img:hover {
+    transform: scale(1.1);
+    border-color: rgb(183, 183, 183);
+    /* Cambia el color del borde al pasar el cursor */
+}
+
+/**********************************************************/
+/* style presupuesto*/
+/*formulario*/
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+.extras {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.extras label {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.submit-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------------------------------------------*/
+
+
+#map {
+    width: 100%;
+    height: 400px;
+    border: solid 1px black;
+}
+
+/* Footer */
+.footer1234 {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}

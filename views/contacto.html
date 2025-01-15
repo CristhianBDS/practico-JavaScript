@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header1234">
+
+        <nav class="nav1234">
+            <ul>
+                <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="./contacto.html" class="nav-link"
+                        style="background-color:#8cce2f; border-radius: 8px;">Contacto</a></li>
+                <li><a href="./productos.html" class="nav-link">Productos</a></li>
+                <li><a href="./presupuesto.html" class="nav-link">Presupuesto</a></li>
+            </ul>
+        </nav>
+        <div class="logo1234">
+            <img src="../assets/images/airplane-svgrepo-com.svg" alt="Logo Agencia de Viajes">
+        </div>
+    </header>
+    <main><br><br><br><br>
+        <h2>Ubicación de Nuestro Negocio</h2><br>
+        <div id="map"></div>
+        <section id="datos-contacto">
+            <h2>Datos de Contacto</h2>
+            <p><strong>Dirección:</strong> Calle Sánchez Pacheco, 16, Madrid, España
+            <p><strong>Teléfono:</strong> +34 123 456 789</p>
+            <p><strong>Email:</strong> contacto@miempresa.com</p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Contenedor de los logos -->
+        <div class="footer-logos">
+            <!-- Cada logo es un enlace hacia otra página -->
+            <a href="https://www.youtube.com/" target="_blank" title="Enlace a link de youtube">
+                <img src="../assets/images/youtubeicon.svg" alt="Logo de youtube">
+            </a>
+            <a href="https://www.google.com/intl/es/account/about/" target="_blank" title="Enlace a link de gmail">
+                <img src="../assets/images/official-gmail-icon-2020.svg" alt="Logo de gmail">
+            </a>
+            <a href="https://www.instagram.com/accounts/emailsignup/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es"
+                target="_blank" title="Enlace a link de instagram">
+                <img src="../assets/images/instagram-logo-icone4.png" alt="Logo de instagram">
+            </a>
+            <a href="https://www.facebook.com/?locale=es_ES" target="_blank" title="Enlace a facebook">
+                <img src="../assets/images/124010.png" alt="Logo de facebook ">
+            </a>
+        </div>
+
+        <!-- Texto de derechos reservados -->
+        <p class="footer-text">Derechos reservados Cristhian Sena</p>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="../scripts/mapajs.js"></script>
+</body>
+
+</html>
